@@ -15,7 +15,7 @@ N=`date +%s%N`
 export PS4='+[$(((`date +%s%N`-$N)/1000000))ms][${BASH_SOURCE}:${LINENO}]: ${FUNCNAME[0]:+${FUNCNAME[0]}(): }';
 DEBUG="1"
 
-[ -n "$DEBUG" ] && set -xv
+[ -n "$DEBUG" ] && set -x
 
 # Print colored messages.
 # Usage: msg "message text" "message type" "optional: err"
